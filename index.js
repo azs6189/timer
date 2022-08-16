@@ -3,6 +3,7 @@ class Timer {
 		this.durationInput = durationInput;
 		this.startButton = startButton;
 		this.pauseButton = pauseButton;
+
 		this.startButton.addEventListener("click", this.start);
 	}
 	start() {
@@ -10,4 +11,6 @@ class Timer {
 	}
 }
 
-new Timer("hi there");
+const durationInput = document.querySelector("#duration");
+const startButton = document.querySelector("#start");
+const pauseButton = document.querySelector("#pause");
