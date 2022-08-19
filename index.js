@@ -8,12 +8,12 @@ class Timer {
 	}
 
 	start = () => {
-		this.importantMethodToCall();
+		setInterval(this.tick, 1000);
 	};
 
-	importantMethodToCall() {
-		console.log("important thing was done!!!");
-	}
+	tick = () => {
+		console.log("tick");
+	};
 }
 
 const durationInput = document.querySelector("#duration");
