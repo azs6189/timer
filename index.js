@@ -8,7 +8,9 @@ class Timer {
 	}
 
 	start = () => {
-		setInterval(this.tick, 1000);
+		this.tick();
+		const timer = setInterval(this.tick, 1000);
+		console.log(timer);
 	};
 
 	tick = () => {
