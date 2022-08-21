@@ -6,6 +6,8 @@ class Timer {
 
 		if (callbacks) {
 			this.onStart = callbacks.onStart;
+			this.onTick = callbacks.onTick;
+			this.onComplete = callbacks.onComplete;
 		}
 
 		this.startButton.addEventListener("click", this.start);
