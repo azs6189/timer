@@ -9,19 +9,26 @@
     </head>
 
     <body>
-        <svg height="400" width="400">
-            <!-- Perimeter = 2 * PI * r -->
-            <!-- Perimeter = 2 * PI * 90 -->
-            <!-- Perimeter = ~565 -->
+        <div class="timer">
+            <div class="controls">
+                <input id="duration" value="3" />
+                <div>
+                    <button id="start"><i class="fa-solid fa-play"></i></button>
+                    <button id="pause"><i class="fa-solid fa-pause"></i></button>
+                </div>
+            </div>
 
-            <!-- Border starts from the right-hand side and goes clock-wise -->
-            <circle r="190" cx="200" cy="200" fill="transparent" stroke="blue" stroke-width="15"
-                transform="rotate(-90 200 200)" />
-        </svg>
+            <svg height="400" width="400">
+                <!-- Perimeter = 2 * PI * r -->
+                <!-- Perimeter = 2 * PI * 90 -->
+                <!-- Perimeter = ~565 -->
 
-        <input id="duration" value="30" />
-        <button id="start"><i class="fa-solid fa-play"></i></button>
-        <button id="pause"><i class="fa-solid fa-pause"></i></button>
+                <!-- Border starts from the right-hand side and goes clock-wise -->
+                <circle r="190" cx="200" cy="200" fill="transparent" stroke="blue"
+                    stroke-width="15" transform="rotate(-90 200 200)" />
+            </svg>
+        </div>
+
         <script src="timer.js"></script>
         <script src="index.js"></script>
     </body>
